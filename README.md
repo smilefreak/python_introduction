@@ -1,1 +1,1 @@
-# Python introduction for Mozilla Study Group
+# Python introduction work along 24/09/2015
