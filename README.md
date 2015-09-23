@@ -1,1 +1,1 @@
-# python_introduction
+# Python introduction for Mozilla Study Group
