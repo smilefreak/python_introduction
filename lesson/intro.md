@@ -12,8 +12,8 @@ It has some core pholosophies.
 
 - Beautful is better than ugly
 - Explicit is better than implicit
-- Simple is better than complext
-- Complex is better than comppilacted
+- Simple is better than complex
+- Complex is better than complicated
 - Readability counts
 
 
@@ -35,7 +35,7 @@ DNA is essentially a string of letters, SNPs are changes in letters.
 All the sequence data farmots I work with are mostly full of strings and numbers.
 
 Python has lot's of small prgramming libraries for everything. People will
-say yea but R has lot's of packages as well. These libraries differ in that 
+say "yeah but R has lots of packages as well". These libraries differ in that 
 they are designed for creating programs to interface with commonly known datasets.
 
 I have listed two that I have frequently used to create programs the need to interface with the common sequencing formats variant call files (VCFs) and BAM (binary alignment).
