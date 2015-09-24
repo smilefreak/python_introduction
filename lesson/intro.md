@@ -38,7 +38,7 @@ Python has lot's of small prgramming libraries for everything. People will
 say yea but R has lot's of packages as well. These libraries differ in that 
 they are designed for creating programs to interface with commonly known datasets.
 
-I have listed two that I have frequently used to create programs using the commonbioinfomatics data formats variant call files (VCFs) and BAM (binary alignment).
+I have listed two that I have frequently used to create programs the need to interface with the common sequencing formats variant call files (VCFs) and BAM (binary alignment).
 
 - pysam https://pysam.readthedocs.org/en/latest/
 - pyvcf https://pyvcf.readthedocs.org/en/latest/
@@ -68,19 +68,49 @@ things can exist. More *hardcore* languages, such as JAVA and C#, require you to
 
 ```py
     gene = "ABCG2"
-    no_tumours = 20
+    odds_ratio = 20
     avg_bmi = 20.0
-    print(gene, no_tumours, avg_bmi)
+    print(gene, odds_ratio,  avg_bmi)
 ```
 
-You can reassign these variables at wil within your code, even changing the datatype if you want.
+You can reassign these variables at wil within your code, even changing the datatype if you want. Can assign them to other variables also.
 
 ```py
     gene = "TP53"
     print(gene)
     gene = 10 
     print(gene)
+    gene = avg_bmi
+    print(avg_bmi, gene)
 ```
 
-Thes things are not just storage items but can be manipuled also.
- 
+Thes variables are not just storage items but can be manipuled also using commonly known arithmetic operations, such as multiplication plus etc.
+
+
+```py
+    n = 100
+    print("samples size times 100", n * 100)
+    print("sample size dividied by 10", n/10)
+    name = "James"
+    print(name/10)
+    print(name*10)
+```
+
+Stings are essentially list of characters and have a few more
+default functions associated with them.
+
+Slicing, which is analagous to subsetting a df or vector, is probably one of the most usefuls bits of syntax in python.
+
+
+```py
+    file1_id = "NZGL_54000"
+    print("ID ", file1_id[0:3])
+    print("ID ", file1_id[:3])
+    
+    print("ID ", file1_id[5:9])
+    print("ID ", file1_id[:9])
+
+``` 
+
+
+
