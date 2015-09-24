@@ -16,16 +16,31 @@ mass = mass * 2.0
 age = age - 20
 ```
 
+2.
+
+```
+  element = 'oxygen'
+```
+
+What is the value of element[:4]? What about element[4:]? Or element[:]?
+
+What is element[-1]? What is element[-2]? Given those answers, explain what element[1:-1] does.
+
+
 Challenge break #2
 ========================================================
 
-```{r}
-summary(cars)
+Turn a string into a list
+Use a for-loop to convert the string “hello” into a list of letters.
+
+```
+  ["h", "e", "l", "l", "o"]
 ```
 
-Slide With Plot
+Homework, bring solutions to HackHour for discussion :)
 ========================================================
 
-```{r, echo=FALSE}
-plot(cars)
-```
+http://rosalind.info/problems/locations/
+
+- Write a robust python function that takes a DNA sequence string as an argument and outputs
+  the reverse complement. ATGG becomes GGTA, which becomes AACT.

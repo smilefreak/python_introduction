@@ -106,11 +106,159 @@ Slicing, which is analagous to subsetting a df or vector, is probably one of the
     file1_id = "NZGL_54000"
     print("ID ", file1_id[0:3])
     print("ID ", file1_id[:3])
-    
     print("ID ", file1_id[5:9])
     print("ID ", file1_id[:9])
 
 ``` 
 
+# String functions 
+
+Python has various inbuilt functions for operating on strings specifically. 
+
+What is a function? In simplest terms a function is a thing that takes inputs
+and gives output. Sometimes that output may be a number, sometimes it may print something, sometimes it may change the value of a variable?. Basically takes something and does something to it, and may output something. That's about as vague as it get's.
+
+You can also write your own functions, but we will briefly look now some string functions. 
 
 
+You can split strings
+```py
+    car = "Red blue car"
+    print(car.split())
+```
+You can reverse strings.
+```py
+    print(car.reverse())
+```
+Turn things to uppercase
+
+```py
+    print(car.upper())
+``` 
+
+# Basic data structures
+
+Python has a few very basic data structures Lists, Tuples, and Dictionaries.
+
+Lists are usually used to store lists of similar things - numbers, strings etc.
+
+Create a empty list
+```py
+    l = []
+    print l
+```
+
+Add a number to the list.
+
+```py
+    l.append(0)
+    print l
+```
+
+Can also store strings, pull out specific items, and slice.
+
+```py
+    l = ['one','ten','twelve','ninenty']
+    print(l[0])
+    print(l[:1])
+    print(l[2:]) 
+```
+
+Can add a list to another list 
+
+```py
+    l.extend(['ten thousand', 'fiev])
+    print(l)
+```
+
+# Loops
+
+If you want to do the same thing many times only changing a few things, loops
+are your friend. Almost every programming language provides a loop of some kind. 
+in python it is very easy to loop across a list.
+
+
+```py
+    l = [1,2,3,4]
+    for item in l:
+        print(l)
+```
+
+Same syntax applies to any iterable (files, lists, dictionaries etc)
+
+Sometimes you may want to get the index at every iteraction easily.
+
+Bad way.
+
+```py
+    i = 0 
+    for item it l:
+        print(l[i])
+        i += 1
+```
+
+Pythonic good way.
+
+```py
+    i = 0
+    for i, item in enumerate(l):
+        print(l[i])
+        print(item) 
+        print(i)
+```
+
+# Conditionals.
+
+You can also evaluate logical statements using the if statement.
+
+# Functions 
+
+You can also create your own functions.
+
+This example function will take a number add 10 to it and return 
+the result.
+
+```py
+    def add_ten(x):
+        return(x+10)
+
+```
+
+# Conditionals 
+    
+# File input and output
+
+One way to ope na file in python is save the filename as string, then use
+the open function to read the file, and a loop to process each line. 
+
+Reading from a file.
+
+```py
+    file_name = "files.txt"
+    with open(file_name) as f:
+        for line in f:
+            print line
+```
+
+Writing to a file.
+
+```py
+    output_name = "output.txt"
+    with open(output_name) as f:
+        f.write("test\n")         
+```
+
+# Command-line arguments.
+
+BASH scripts are nasty, and for many purposes that don't need to perform analysis
+but rather just convert columns or derive new columns etc.
+
+In contrast, python scripts are clean, and testable.
+
+# Future sessions?
+
+    - Writing packages
+    - Test driven development
+    - Object orientated programming
+    - Web-programming in python
+    - More focused sessions on some of the topics, such as functions and conditionals.
