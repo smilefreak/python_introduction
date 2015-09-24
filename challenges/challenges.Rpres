@@ -1,0 +1,31 @@
+Challenges python introduction.
+========================================================
+author: James Boocock
+date: 24 Sept 2015.
+
+Challenge break #1
+========================================================
+
+1. What will the variables age and mass refer to after these
+   operations
+
+```{python}
+mass = 47.5
+age = 122
+mass = mass * 2.0
+age = age - 20
+```
+
+Challenge break #2
+========================================================
+
+```{r}
+summary(cars)
+```
+
+Slide With Plot
+========================================================
+
+```{r, echo=FALSE}
+plot(cars)
+```
